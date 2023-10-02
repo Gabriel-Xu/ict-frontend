@@ -1,1 +1,1 @@
-Imagae storage
+Image storage
