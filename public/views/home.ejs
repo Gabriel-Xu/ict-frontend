@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TJ ICT</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="style.css"> 
-</head>
-<body>
-<header id="header">
-	<div class="inner">
-		<a href="home" class="logo"><strong>Intermediate Computer Team</strong></a>
-		<nav id="nav">
-			<a href="home">Home</a>
-			<a href="resources">Resources</a>
-			<a href="https://www.tjctgrader.org">Grader</a>
-			<a href="https://www.facebook.com/groups/tjhsstict">Facebook</a>
-			<a href="gallery">Gallery</a>
-		</nav>
-		<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-	</div>
-</header>
+<%- include('partials/header') %>
 
 <section id="banner">
 	<div class="inner">
@@ -31,7 +12,7 @@
 			<div>
 				<span class="icon fa-car"></span>
 				<h3>When</h3>
-				<p>Eighth periods are friday B block</p>
+				<p>Eighth periods are Friday B block</p>
 			</div>
 
 			<div>
@@ -48,10 +29,10 @@
 		</div>
 
 		<footer>
-			<a href="https://www.tjctgrader.org" class="button" class="bold">In-house contests</a>
+			<a href="https://www.tjctgrader.org" class="button" class="bold" target="_blank">In-house contests</a>
 			<br>
 			<br>
-			<a href="https://www.facebook.com/groups/tjhsstict" class="button">Stay Updated</a>
+			<a href="https://www.facebook.com/groups/tjhsstict" class="button" target="_blank">Stay Updated</a>
 		</footer>
 	</div>
 </section>
@@ -68,10 +49,10 @@
 				</header>
 				<p>ICT is a cool club geared towards competitive programming.<br />During eighth periods we have lectures, activities, and contests, such as ACSL.<br />
 				    Attend to hone your skills (for both beginner and experienced programmers) and meet a community of like-minded people.
-					<br/>Do contests such as <a href="https://codeforces.com/group/M4wsRWBHyZ/contests">codeforces</a> and <a href="https://usaco.org">USACO</a>, and get better by looking at the <a href="resources">resources</a> section, which includes eighth period materials.<br/>
+					<br/>Do contests such as <a href="https://codeforces.com/group/M4wsRWBHyZ/contests" target="_blank">Codeforces</a> and <a href="https://usaco.org" target="_blank">USACO</a>, and get better by looking at the <a href="resources">resources</a> section, which includes eighth period materials.<br/>
 				</p>
 				<footer>
-					<a href="https://docs.google.com/spreadsheets/d/1J9kYJMqueF2EmppwJQLi5r6pdu8MB8ZBJmRplh1zXxY/edit?usp=sharing" class="button">Eigth period schedule</a>
+					<a href="https://docs.google.com/spreadsheets/d/1H4DdJTlFXAZqA6W1yegPFmOJGctda-t4ZL-_mmLoxgY/edit?usp=sharing" class="button" target="_blank">Eigth period schedule (2024-2025)</a>
 				</footer>
 			</article>
 			<article>
@@ -84,11 +65,11 @@
 				<p>We have in-house competitions hosted on the grader during eighth periods, which combined with other heuristics, decides who goes to travel competitions.<br/>
 				In-houses will hopefully provide good practice and possible rewards (cookies).<br/>
 				Travel competitions are a great experience and we try to send as many people <br/>
-				as possible. Make sure to check facebook and your email to recieve <br/>
+				as possible. Make sure to check Facebook and your email to recieve <br/>
 				important information regarding contests.
 				</p>
 				<footer>
-					<a href="https://docs.google.com/document/d/1WTDflYyvEfOu_SqD4JCCLIc1sGOUQR4csXpeqPxLXzg/edit?usp=sharing" class="button">Learn More about in-houses</a>
+					<a href="https://docs.google.com/document/d/14CBtom9g0AKZkmncUQQJwV-dIwG54Arr26FnWfUcdvI/edit?usp=sharing" class="button" target="_blank">Learn more about in-houses</a>
 				</footer>
 			</article>
 		</div>
@@ -113,7 +94,7 @@
 		</p>
 		<div class = "bold">When?</div>
 		<p>ICT holds ACSL contests on Friday B Blocks during 8th periods.  For more information, visit the ACSL website at
-			<a href="https://www.acsl.org">acsl.org</a>
+			<a href="https://www.acsl.org" target="_blank">acsl.org</a>
 		</p>
 		<div class = "bold">Where?</div>
 		<p>During normal meetings we meet in Curie Commons.  Competitions will 
@@ -126,18 +107,6 @@
 	</div>
 </section>
 
-<footer id="footer">
-	<div class="inner">
-		<h3>Get In Touch</h3>
-		<p>Email tjhsstictcaptains@gmail.com or talk to an offficer (in person or through facebook) </p>
-	</div>
-</footer>
-
-<div class="copyright">
-    The GitHub repository for this project can be found <a href="https://github.com/Gabriel-Xu/ict-frontend">here</a>, feel free to create pull requests
-    <br>
-	Website made by: <a href="https://codeforces.com/profile/GabrielXu">Gabriel Xu ('25)</a>,  <a href="https://codeforces.com/profile/ChiMasterBing">Johnny Liu ('24)</a>, and  <a href="https://codeforces.com/profile/DanielQiu">Daniel Qiu ('24)</a>
-    <br>
-</div>
+<%- include('partials/footer') %>
 </body>
 </html>
